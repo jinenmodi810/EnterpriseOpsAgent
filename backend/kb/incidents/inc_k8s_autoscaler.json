@@ -1,0 +1,9 @@
+{
+    "id": "INC_K8S_AUTOSCALER",
+    "title": "Kubernetes autoscaler misconfiguration causing CPU saturation",
+    "summary": "Pods for a critical service hit 90 percent CPU due to an autoscaler minReplicas setting being too low. Updating the autoscaler configuration and increasing pod count stabilised the system.",
+    "services": ["checkout-api"],
+    "tags": ["kubernetes", "autoscaler", "cpu", "capacity"],
+    "primary_cause_category": "infra",
+    "severity": "high"
+  }

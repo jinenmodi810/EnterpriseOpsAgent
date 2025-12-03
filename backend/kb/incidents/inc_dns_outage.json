@@ -1,0 +1,9 @@
+{
+    "id": "INC_DNS_OUTAGE",
+    "title": "External DNS outage impacting third-party APIs",
+    "summary": "DNS resolution failures for a third-party payment provider caused intermittent checkout failures. Failing over to a secondary DNS resolver mitigated the impact.",
+    "services": ["checkout-api", "payments-service"],
+    "tags": ["dns", "third-party", "network"],
+    "primary_cause_category": "network",
+    "severity": "high"
+  }

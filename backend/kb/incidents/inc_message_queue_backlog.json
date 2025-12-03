@@ -1,0 +1,9 @@
+{
+    "id": "INC_MESSAGE_QUEUE_BACKLOG",
+    "title": "Message queue backlog delaying order processing",
+    "summary": "A consumer deployment bug reduced throughput for order-processing workers, leading to a growing backlog in the message queue and delayed order fulfilment.",
+    "services": ["order-processor", "message-queue"],
+    "tags": ["queue", "backlog", "consumer", "throughput"],
+    "primary_cause_category": "capacity",
+    "severity": "medium"
+  }

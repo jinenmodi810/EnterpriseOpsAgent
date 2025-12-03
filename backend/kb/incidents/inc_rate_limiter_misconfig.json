@@ -1,0 +1,9 @@
+{
+    "id": "INC_RATE_LIMITER_MISCONFIG",
+    "title": "Rate limiter misconfiguration blocking legitimate traffic",
+    "summary": "A global rate-limit policy was applied too aggressively, causing a wave of 429 responses for legitimate client requests. Adjusting rate limit thresholds restored normal service.",
+    "services": ["api-gateway"],
+    "tags": ["rate-limiter", "config", "429"],
+    "primary_cause_category": "config",
+    "severity": "medium"
+  }

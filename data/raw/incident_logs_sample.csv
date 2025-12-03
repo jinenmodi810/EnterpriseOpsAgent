@@ -1,0 +1,11 @@
+timestamp,message,source,level
+1/10/25 10:02,Alert: API latency exceeded 800ms threshold on service checkout-api.,alert,critical
+1/10/25 10:03,Warning: Error rate spike detected on checkout-api.,alert,warning
+1/10/25 10:05,Developer comment: investigating high error rate.,developer,info
+1/10/25 10:07,Log: Timeout when connecting to payments-service endpoint.,log,error
+1/10/25 10:10,Infra alert: CPU usage 92 percent on checkout-api pods.,infra,critical
+1/10/25 10:15,Restart triggered for payments-service container.,infra,info
+1/10/25 10:20,Observation: Error rate falling after restart.,developer,info
+1/10/25 10:27,"Customer complaint: unable to checkout, getting 500 error.",customer,critical
+1/10/25 10:35,Mitigation: scaling checkout-api from 3 to 6 pods.,infra,info
+1/10/25 10:45,"Resolution: system stabilised, error rates normal.",system,info

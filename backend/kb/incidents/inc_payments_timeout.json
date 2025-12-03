@@ -1,0 +1,9 @@
+{
+    "id": "INC_PAYMENTS_TIMEOUT",
+    "title": "Checkout outage due to payments-service timeouts",
+    "summary": "Checkout API experienced high latency and 5xx errors because the payments-service was timing out. Restarting the payments container and scaling checkout pods resolved the incident.",
+    "services": ["checkout-api", "payments-service"],
+    "tags": ["payments", "timeout", "latency", "checkout"],
+    "primary_cause_category": "dependency",
+    "severity": "critical"
+  }

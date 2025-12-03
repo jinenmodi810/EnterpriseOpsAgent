@@ -1,0 +1,9 @@
+{
+    "id": "INC_CACHE_STAMPEDE",
+    "title": "Cache stampede causing sudden DB load spike",
+    "summary": "A misconfigured cache TTL caused many keys to expire simultaneously, leading to a surge of read traffic on the primary database and degraded latency across multiple APIs.",
+    "services": ["product-api", "redis-cache", "primary-db"],
+    "tags": ["cache", "redis", "database-load", "latency"],
+    "primary_cause_category": "capacity",
+    "severity": "high"
+  }

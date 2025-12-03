@@ -1,0 +1,9 @@
+{
+    "id": "INC_AUTH_SERVICE_LATENCY",
+    "title": "Authentication service latency causing login failures",
+    "summary": "The auth service experienced GC pauses and long response times, causing login timeouts and session drops. Tuning GC settings and scaling the service resolved the issue.",
+    "services": ["auth-service", "frontend"],
+    "tags": ["auth", "latency", "gc", "login"],
+    "primary_cause_category": "dependency",
+    "severity": "high"
+  }

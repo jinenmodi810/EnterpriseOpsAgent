@@ -1,0 +1,9 @@
+{
+    "id": "INC_DB_CONNECTION_POOL",
+    "title": "Database connection pool exhaustion in orders DB",
+    "summary": "Order creation failed intermittently when the PostgreSQL connection pool was exhausted. Misconfigured pool size combined with a traffic spike caused timeouts and 5xx errors.",
+    "services": ["orders-api", "orders-db"],
+    "tags": ["database", "connection-pool", "timeout"],
+    "primary_cause_category": "dependency",
+    "severity": "high"
+  }

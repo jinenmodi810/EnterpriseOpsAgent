@@ -1,0 +1,9 @@
+{
+    "id": "INC_FEATURE_FLAG_ROLLOUT",
+    "title": "Feature flag rollout causing higher error rate",
+    "summary": "A new feature flag was rolled out globally without canarying, causing a spike in validation errors and 400 responses for a subset of customers. Rolling back the flag resolved the issue.",
+    "services": ["checkout-api", "feature-flag-service"],
+    "tags": ["feature-flag", "rollout", "deployment"],
+    "primary_cause_category": "deployment",
+    "severity": "medium"
+  }
